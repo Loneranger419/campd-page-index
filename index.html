@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CampD Nexus</title>
+    <link
+      rel="preconnect"
+      href="https://cdn.jsdelivr.net"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-gVg3lHES0dixCphuMhXzi0NyCUhFWeIbkMdHyECO0LBK3qyjJPyB0cV6X3yH06jC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="card border-secondary bg-transparent shadow-sm mb-4" id="head">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4 text-center py-4 py-md-5">
+            <img
+              src="img/logo.png"
+              class="img-fluid logo"
+              alt="CampD logo"
+              width="180"
+              height="180"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="card-title display-5 mb-3">
+                <i class="bi bi-campfire me-2"></i>CampD Nexus
+              </h1>
+              <p class="card-text lead">
+                A place for builds, mods, and the experiments we don’t talk about in public.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <span class="badge bg-warning bg-opacity-75 text-dark fw-semibold">
+                  <i class="bi bi-stars me-1"></i>Friends &amp; Co-op Focused
+                </span>
+                <span class="badge bg-info bg-opacity-50 text-light fw-semibold">
+                  <i class="bi bi-tools me-1"></i>Under Active Construction
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-6">
+          <div class="card border-primary h-100">
+            <div class="card-header border-primary bg-primary bg-opacity-25 d-flex align-items-center">
+              <i class="bi bi-hammer me-2 text-primary-emphasis"></i>
+              <h2 class="h5 mb-0 text-uppercase">Projects</h2>
+            </div>
+            <div class="card-body">
+              <p class="text-secondary mb-3">
+                Modpacks, server hubs, or script releases here.
+              </p>
+              <div class="list-group list-group-flush gap-3" id="project-tiles">
+                  <a href="https://loneranger419.github.io/CampD-SPT-Mods/" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="img/SPT.png" alt="SPT modpack thumbnail" class="tile-thumb flex-shrink-0" />
+                      <div class="flex-grow-1">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <h2 class="h5 mb-1">
+                            <i class="bi bi-lightning-charge text-warning me-2"></i>SPT Modpack
+                            <span class="badge bg-warning text-dark ms-2">Beta</span>
+                          </h2>
+                          <span class="badge text-bg-dark">11/02/25</span>
+                        </div>
+                        <p class="mb-1 text-muted">
+                          Little modpack for our SPT server.<br>Required and Optional mods available.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3600788547" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="img/PZ.png" alt="Project Zomboid modpack thumbnail" class="tile-thumb flex-shrink-0" />
+                      <div class="flex-grow-1">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <h2 class="h5 mb-1">
+                            <i class="bi bi-map text-info me-2"></i>Project Zomboid Modpack
+                          </h2>
+                          <span class="badge text-bg-dark">10/31/25</span>
+                        </div>
+                        <p class="mb-1 text-muted">
+                          Little modpack for our Project Zomboid server.<br>Put together by our boy Rumham.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-warning h-100">
+            <div class="card-header border-warning bg-warning bg-opacity-25 d-flex align-items-center">
+              <i class="bi bi-journal-text me-2 text-warning-emphasis"></i>
+              <h2 class="h5 mb-0 text-uppercase">Campfire Notes</h2>
+            </div>
+            <div class="card-body">
+              <p class="text-secondary mb-3">
+                Blog posts, changelogs, or event recaps.
+              </p>
+              <div class="list-group list-group-flush gap-3" id="post-tiles">
+                  <a href="#" class="list-group-item list-group-item-action placeholder-tile">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="tile-thumb placeholder-thumb flex-shrink-0">
+                        <i class="bi bi-journal-bookmark"></i>
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <h2 class="h5 mb-1">
+                            <i class="bi bi-pencil text-warning me-2"></i>Blog Placeholder
+                          </h2>
+                          <small class="version">Last updated: TBD</small>
+                        </div>
+                        <p class="mb-1 text-muted">
+                          Replace this entry when your first write-up is ready to share.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action placeholder-tile">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="tile-thumb placeholder-thumb flex-shrink-0">
+                        <i class="bi bi-calendar3"></i>
+                      </div>
+                      <div class="flex-grow-1">
+                        <div class="d-flex w-100 justify-content-between align-items-center">
+                          <h2 class="h5 mb-1">
+                            <i class="bi bi-calendar-event text-warning me-2"></i>Blog Placeholder
+                          </h2>
+                          <small class="version">Planned entry</small>
+                        </div>
+                        <p class="mb-1 text-muted">
+                          Use this slot for highlights, patch notes, or event schedules.
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

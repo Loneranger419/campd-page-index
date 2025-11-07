@@ -1,0 +1,121 @@
+:root {
+  --campd-overlay: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  min-height: 100vh;
+  background-color: #111;
+  background-image: url("img/body.png");
+  background-size: 122%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f1f1f1;
+}
+
+#head {
+  background-image: url("img/header.png");
+  background-size: cover;
+  background-position: center 37.5%;
+  border-radius: 0.75rem;
+}
+
+#head .card-body {
+  background-color: var(--campd-overlay);
+  border-radius: 0.75rem;
+  margin-right: 200px;
+}
+
+.card {
+  backdrop-filter: blur(2px);
+}
+
+.logo {
+  max-width: 200px;
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.list-group.list-group-flush {
+  border-radius: 0;
+}
+
+.placeholder-tile {
+  pointer-events: none;
+}
+
+.placeholder-tile .badge,
+.placeholder-tile .version {
+  opacity: 0.8;
+}
+
+.tile-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+.tile-thumb.placeholder-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 2.25rem;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(0, 0, 0, 0.45)
+    )
+    no-repeat;
+}
+
+.placeholder-thumb .bi {
+  line-height: 1;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  color: #f8f9fa;
+}
+
+.nav-tabs .nav-link.active {
+  color: #111;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5rem;
+}
+
+.badge.text-bg-dark,
+.badge.text-bg-secondary {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.version {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85em;
+  color: #aaaaaa;
+  white-space: pre-line;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e49c5d;
+}
+
